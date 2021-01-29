@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "e6c8e675-57c1-4d9d-a4be-afbb61781d5a",
+		"name": "Change Number API",
+		"description": "If subscriber change the number, the SmartPoin's balance must be carried forward too. To support the process, please develop an API to get the information of change number.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Candidate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic bXlzZjAxOnRlc3QxMjM="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"mdn\":\"08872000008\",\"pattern\":\"\",\"page\":1, \"rows\":5}"
+				},
+				"url": {
+					"raw": "http://10.16.5.162:8191/cmdn/getCandidate",
+					"protocol": "http",
+					"host": [
+						"10",
+						"16",
+						"5",
+						"162"
+					],
+					"port": "8191",
+					"path": [
+						"cmdn",
+						"getCandidate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query Merchant",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic bXlzZjAxOnRlc3QxMjM="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"mdn\":\"088980213677\"}"
+				},
+				"url": {
+					"raw": "http://10.16.5.162:8191/cmdn/queryMerchant",
+					"protocol": "http",
+					"host": [
+						"10",
+						"16",
+						"5",
+						"162"
+					],
+					"port": "8191",
+					"path": [
+						"cmdn",
+						"queryMerchant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reserve MDN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic bXlzZjAxOnRlc3QxMjM="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mdn\": \"08881852073\",\r\n    \"newMdn\":\"08881802228\"\r\n}"
+				},
+				"url": {
+					"raw": "http://10.16.5.162:8191/cmdn/reserveMdn",
+					"protocol": "http",
+					"host": [
+						"10",
+						"16",
+						"5",
+						"162"
+					],
+					"port": "8191",
+					"path": [
+						"cmdn",
+						"reserveMdn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Release MDN",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Basic bXlzZjAxOnRlc3QxMjM="
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mdn\": \"08881852073\",\r\n    \"newMdn\":\"08881802228\"\r\n}"
+				},
+				"url": {
+					"raw": "http://10.16.5.162:8191/cmdn/releaseMdn",
+					"protocol": "http",
+					"host": [
+						"10",
+						"16",
+						"5",
+						"162"
+					],
+					"port": "8191",
+					"path": [
+						"cmdn",
+						"releaseMdn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Change Number",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic bXlzZjAxOnRlc3QxMjM=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"mdn\": \"628881470910\", \"newMdn\": \"08881802221\"}"
+				},
+				"url": {
+					"raw": "http://10.16.5.162:8191/cmdn/changeMdn",
+					"protocol": "http",
+					"host": [
+						"10",
+						"16",
+						"5",
+						"162"
+					],
+					"port": "8191",
+					"path": [
+						"cmdn",
+						"changeMdn"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
