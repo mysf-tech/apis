@@ -28,15 +28,15 @@
 					"raw": "{\"mdn\":\"08872000008\",\"pattern\":\"\",\"page\":1, \"rows\":5}"
 				},
 				"url": {
-					"raw": "http://10.16.5.162:8191/cmdn/getCandidate",
+					"raw": "http://10.16.9.18:8080/cmdn/getCandidate",
 					"protocol": "http",
 					"host": [
 						"10",
 						"16",
-						"5",
-						"162"
+						"9",
+						"18"
 					],
-					"port": "8191",
+					"port": "8080",
 					"path": [
 						"cmdn",
 						"getCandidate"
@@ -67,15 +67,15 @@
 					"raw": "{\"mdn\":\"088980213677\"}"
 				},
 				"url": {
-					"raw": "http://10.16.5.162:8191/cmdn/queryMerchant",
+					"raw": "http://10.16.9.18:8080/cmdn/queryMerchant",
 					"protocol": "http",
 					"host": [
 						"10",
 						"16",
-						"5",
-						"162"
+						"9",
+						"18"
 					],
-					"port": "8191",
+					"port": "8080",
 					"path": [
 						"cmdn",
 						"queryMerchant"
@@ -106,15 +106,15 @@
 					"raw": "{\r\n    \"mdn\": \"08881852073\",\r\n    \"newMdn\":\"08881802228\"\r\n}"
 				},
 				"url": {
-					"raw": "http://10.16.5.162:8191/cmdn/reserveMdn",
+					"raw": "http://10.16.9.18:8080/cmdn/reserveMdn",
 					"protocol": "http",
 					"host": [
 						"10",
 						"16",
-						"5",
-						"162"
+						"9",
+						"18"
 					],
-					"port": "8191",
+					"port": "8080",
 					"path": [
 						"cmdn",
 						"reserveMdn"
@@ -145,15 +145,15 @@
 					"raw": "{\r\n    \"mdn\": \"08881852073\",\r\n    \"newMdn\":\"08881802228\"\r\n}"
 				},
 				"url": {
-					"raw": "http://10.16.5.162:8191/cmdn/releaseMdn",
+					"raw": "http://10.16.9.18:8080/cmdn/releaseMdn",
 					"protocol": "http",
 					"host": [
 						"10",
 						"16",
-						"5",
-						"162"
+						"9",
+						"18"
 					],
-					"port": "8191",
+					"port": "8080",
 					"path": [
 						"cmdn",
 						"releaseMdn"
@@ -184,15 +184,15 @@
 					"raw": "{\"mdn\": \"628881470910\", \"newMdn\": \"08881802221\"}"
 				},
 				"url": {
-					"raw": "http://10.16.5.162:8191/cmdn/changeMdn",
+					"raw": "http://10.16.9.18:8080/cmdn/changeMdn",
 					"protocol": "http",
 					"host": [
 						"10",
 						"16",
-						"5",
-						"162"
+						"9",
+						"18"
 					],
-					"port": "8191",
+					"port": "8080",
 					"path": [
 						"cmdn",
 						"changeMdn"
